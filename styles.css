@@ -1,0 +1,20 @@
+
+
+#container div {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+}
+
+div#container {
+    border: 5px dashed red;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 30px);
+    grid-template-rows: repeat(16, 30px);
+    /* width: 500px;
+    height: 500px; */
+}
+
+.drew {
+    background-color: black;
+}
