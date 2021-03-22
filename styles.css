@@ -1,20 +1,74 @@
+body {
+    background-color: #ccffbd;
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    grid-template-columns: 2fr 1.4fr;
+    grid-template-rows: auto;
+    text-align: center;
+}
 
+h1 {
+    
+    margin-top: 30px;
+}
+
+p {
+    font-size: 20px;
+    width: 75%;
+    margin:  10px auto;
+}
 
 #container div {
     border: 1px solid black;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+    transition: all;
+}
+
+#container div:hover {
+    transition: ease 0.3s all;
+}
+
+#right-side {
+    background-color: #7eca9c;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+#buttons {
+    align-self: start;
+    grid-row: 3;
+}
+
+.button {
+    padding: 30px;
+    border: 1px solid #40394a;
+    border-radius: 10px;
+    background: rgb(64,57,74);
+    background: linear-gradient(90deg, rgba(64,57,74,1) 0%, rgba(126,202,156,1) 35%, rgba(204,255,189,1) 100%);
+    cursor: pointer;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px auto;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.button:hover{
+    transform: rotate(3deg);
 }
 
 div#container {
-    border: 5px dashed red;
+    border: 3px dashed rgba(0, 0, 0, 0.76);
     display: inline-grid;
-    grid-template-columns: repeat(16, 30px);
-    grid-template-rows: repeat(16, 30px);
-    /* width: 500px;
-    height: 500px; */
+    grid-template-columns: repeat(var(--gridSize, 1), 20px);
+    grid-template-rows: repeat(var(--gridSize, 1), 20px);
+    width: 800px;
+    height: 800px;
+    grid-column: 1;
+    grid-row: 1/2;
 }
 
 .drew {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.76);
 }
