@@ -58,6 +58,10 @@ p {
     transform: rotate(3deg);
 }
 
+.button:focus{
+    outline: none;
+}
+
 div#container {
     border: 3px dashed rgba(0, 0, 0, 0.76);
     display: inline-grid;

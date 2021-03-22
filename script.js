@@ -23,7 +23,8 @@ function drewBlack(obj) {
 
 let grid = document.querySelectorAll('#container div');
 let gridEvent = Array.from(grid).map(box => box.addEventListener('mouseover', drewBlack));
-console.log(grid);
+console.log(grid);    
+
 
 // Events
 
